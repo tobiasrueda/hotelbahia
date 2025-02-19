@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+}
+body {
+   background-color: gray; 
+}
+/*encabezado*/
+header {
+    display: flex ;
+    background-color: goldenrod;
+    position: sticky;
+    top: 0px;
+    border: 2px solid black;
+}
+.imglogo {
+    width: 130px;
+    height: 130px ;
+}
+.ul{
+    display: flex;
+    margin-left: 190px; 
+    font-size: 25px;
+    color: goldenrod;
+    
+}
+
+header ul li {
+    margin: 15px ;
+    
+}
+a{
+    color: black;
+}
+.inicio {
+    color: white;
+}
+.habitaciones {
+    color: white;
+
+}
+.servicios {
+    color: white;
+}
+.reserva {
+    color: white;
+}
+.contacto {
+    color: white;
+}
+h1{
+color: goldenrod;
+font-size: 50px;
+margin: 1%;
+
+}
+.pinicio {
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 50px;
+    text-align: center;
+
+}
+.phabitaciones {
+color: white;
+font-family:Arial, Helvetica, sans-serif ;
+font-size: 25px;
+margin: 1%;
+}
+
+.imginicio {
+    width: 550px;
+    height: 550px;
+
+}
+.imghabitaciones {
+    width: 600px ;
+    height: 400px;
+    
+}
+.imgservicios {
+    width: 200px;
+    height: 200px;
+
+}
+.divinicio {
+    display: flex;
+}
+.divservicios {
+    display: flex;
+}
+.pservicios {
+    font-size: 30px;
+}
+.ulservicios {
+    font-size: 20px;
+}
+.imgvarias{
+    width: 500px;
+    height: 100px;
+
+}
+.imgvarias{
+    width: 400px;
+    height: 400px;
+    
+}
+.imgreserva {
+    width: 300px;
+    height: 300px;
+}   
+.divreserva {
+    display: flex;
+}
+.preserva {
+    font-size: 30px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imginstagram {
+    width: 100px;
+    height: 60px;
+}
+.imgfacebook {
+    width: 60px;
+    height: 60px;
+    margin: 2%;
+}
+.divredes {
+    display: flex;
+
+}
+.predes {
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+                                                                          
+
+}
+.pcontacto {
+    font-size: 20px;
+}
