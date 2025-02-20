@@ -1,9 +1,11 @@
+/*body y margen de pagina*/
 *{
     margin: 0%;
 }
 body {
    background-color: gray; 
 }
+
 /*encabezado*/
 header {
     display: flex ;
@@ -30,6 +32,7 @@ header ul li {
 }
 a{
     color: black;
+    text-decoration: none;
 }
 .inicio {
     color: white;
@@ -47,12 +50,17 @@ a{
 .contacto {
     color: white;
 }
+
+/*main*/
+
 h1{
 color: goldenrod;
 font-size: 50px;
 margin: 1%;
 
 }
+
+/*inicio*/
 .pinicio {
     color: white;
     font-family: 'Times New Roman', Times, serif ;
@@ -60,6 +68,15 @@ margin: 1%;
     text-align: center;
 
 }
+.imginicio {
+    width: 550px;
+    height: 550px;
+}
+.divinicio {
+    display: flex;
+}
+
+/*habitaciones*/
 .phabitaciones {
 color: white;
 font-family:Arial, Helvetica, sans-serif ;
@@ -67,24 +84,19 @@ font-size: 25px;
 margin: 1%;
 }
 
-.imginicio {
-    width: 550px;
-    height: 550px;
-
-}
 .imghabitaciones {
     width: 600px ;
     height: 400px;
     
 }
+
+/*servicios*/
 .imgservicios {
     width: 200px;
     height: 200px;
 
 }
-.divinicio {
-    display: flex;
-}
+
 .divservicios {
     display: flex;
 }
@@ -94,16 +106,12 @@ margin: 1%;
 .ulservicios {
     font-size: 20px;
 }
-.imgvarias{
+.imgvarias {
     width: 500px;
-    height: 100px;
-
-}
-.imgvarias{
-    width: 400px;
     height: 400px;
-    
 }
+
+/*reserva*/
 .imgreserva {
     width: 300px;
     height: 300px;
@@ -115,6 +123,8 @@ margin: 1%;
     font-size: 30px ;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*contacto*/
 .imginstagram {
     width: 100px;
     height: 60px;
