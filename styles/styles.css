@@ -1,15 +1,18 @@
-/*body y margen de pagina*/
 *{
     margin: 0%;
 }
+/*para computadoras*/
+@media (min-width: 1024px){
+
 body {
-   background-color: gray; 
+    background: linear-gradient( to top, black,goldenrod);
 }
 
 /*encabezado*/
+
 header {
     display: flex ;
-    background-color: goldenrod;
+    background:linear-gradient(goldenrod, black);
     position: sticky;
     top: 0px;
     border: 2px solid black;
@@ -23,7 +26,7 @@ header {
     margin-left: 190px; 
     font-size: 25px;
     color: goldenrod;
-    
+    list-style-type: none;
 }
 
 header ul li {
@@ -54,9 +57,11 @@ a{
 /*main*/
 
 h1{
-color: goldenrod;
+color: black;
 font-size: 50px;
 margin: 1%;
+text-align: center;
+box-shadow: 10px 10px 40px 3px black;
 
 }
 
@@ -87,14 +92,12 @@ margin: 1%;
 .imghabitaciones {
     width: 600px ;
     height: 400px;
-    
 }
 
 /*servicios*/
 .imgservicios {
     width: 200px;
     height: 200px;
-
 }
 
 .divservicios {
@@ -147,3 +150,14 @@ margin: 1%;
 .pcontacto {
     font-size: 20px;
 }
+
+/*pie de pagina*/
+footer p{
+    color: white;
+}
+
+}
+
+
+
+
