@@ -100,26 +100,43 @@ margin: 1%;
     text-align: center;
 }
 
-
-
 /*servicios*/
-.imgservicios {
+.divservicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divservicios img {
     width: 200px;
     height: 200px;
 }
-
-.divservicios {
-    display: flex;
-}
-.pservicios {
+.divservicios p {
     font-size: 30px;
 }
-.ulservicios {
+.divservicios ul {
     font-size: 20px;
 }
-.imgvarias {
-    width: 500px;
-    height: 400px;
+#tenedor {
+    margin-right: 100px;
+}
+.imgvarias-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "box1 box1 box1" "box2 box2 box2";
+    gap: 10px;
+    padding: 40px;
+}
+.imgvarias-box1{
+    grid-area: box1;
+    
+}
+.imgvarias-box2{
+    grid-area: box2;
+}
+.imgvarias-container img{
+    width: 300px;
+    height: 300px ;
 }
 
 /*reserva*/
@@ -202,7 +219,6 @@ nav {
     grid-area: ul ;
     display: flex;
     margin-top: 10px;
-    margin-right: px;
     align-items: center;
     gap: 10px;
     padding: 5%;
@@ -258,5 +274,29 @@ h1{
 }
 
 /*habitaciones*/
+.phabitaciones {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    margin: 1%;
+    }
+    
+    .imghabitaciones {
+        width: 300px ;
+        height: 200px;
+        box-shadow: 10px 10px 40px 0 black;
+    }
+    .divhabitaciones{
+        display: block;
+        text-align: center;
+    }
+    
+    /*servicios*/
+
+    /*pie de pagina*/
+    footer p{
+        color: white;
+    }
+
 
 }
