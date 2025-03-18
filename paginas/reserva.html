@@ -3,58 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>reserva</title>
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
         <!--barra de navegacion-->
-            
-        <nav>  
-            <img class="imglogo"  src="../fotos/logohotel.png" alt="LOGO">
-            <ul class="ul">
-                <li>
-                    <a  href="../index.html">Inicio</a>
-
-                </li>
-                
-                <li>
-                    <a href="./habitaciones.html">Habitaciones</a>
-
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-
-                </li>
-                <li>
-                    <a class="reserva" href="./reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-    
-         </ul>
-            
+         <nav class="navbar navbar-light bg-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="/fotos/logohotel.png" alt="Logo del hotel" width="100">
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/habitaciones.html">Habitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/reseña.html">Reseña</a></li>
+                </ul>
+            </div>
         </nav>
         
     </header>
     <!--contenido principal-->
     <main>
         <h1>Hace tu Reserva</h1>
-        <br>
-        <div class="divreserva">
-            <img class="imgreserva" src="../fotos/booking.png" alt="Booking">
-            <p class="preserva">Podes ver todas nuestras Habitaciones disponibles a Traves de <a href="https://www.booking.com/index.es-ar.html" target="_blank">Booking</a>  </p>
-        </div>
-        <div class="divreserva">
-            <img class="imgreserva" src="../fotos/airbnb.png" alt="AIRbnb">
-            <p class="preserva">Tambien podes contratar Nuestro Servicio a traves de <a href="https://www.airbnb.com.ar/" target="_blank">AIRbnb</a> </p>
-        </div>
+        <form action="#" method="post" class="reserva-form">
+            <h2>Reserva tu habitación</h2>
+            
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="checkin">Fecha de llegada:</label>
+            <input type="date" id="checkin" name="checkin" required>
+        
+            <label for="checkout">Fecha de salida:</label>
+            <input type="date" id="checkout" name="checkout" required>
+        
+            <label for="guests">Número de personas:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+        
+            <label for="room">Tipo de habitación:</label>
+            <select id="room" name="room">
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+                <option value="familiar">familiar</option>
+            </select>
+        
+            <label for="comments">Comentarios:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        
+            <button type="submit">Reservar</button>
+        </form>
+
+        <section class="section-reserva">
+            <h3>¿Que sucede despues de reservar?</h3>
+            <div class="div-reserva1">
+            <img src="../fotos/gmail-wsp.jpg" alt="">
+            <p>
+                Una vez que completes el formulario de reserva y envíes tu solicitud, recibirás un correo 
+                de confirmación con los detalles de tu estancia. Si el pago es requerido para confirmar 
+                la reserva, te enviaremos un enlace seguro para realizarlo. En caso de dudas o cambios 
+                en tu reserva, puedes contactarnos por correo o teléfono. ¡Esperamos darte la bienvenida pronto!
+              </p>
+             </div>
+             <h3>Politicas de cancelacion</h3>
+             <div class="div-reserva2"> 
+            <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29uJTIwdHlwaW5nfGVufDB8fDB8fHww" alt="">
+            <p>
+                Las reservas pueden cancelarse sin cargo hasta 48 horas antes de la fecha de llegada. 
+                Si la cancelación se realiza con menos de 48 horas de anticipación, se aplicará un cargo 
+                equivalente a la primera noche de estadía. En caso de no presentarse sin previo aviso, 
+                se cobrará el total de la reserva. Para cambios o cancelaciones, contáctenos a través 
+                de nuestro correo electrónico o número de atención al cliente.
+              </p>
+              </div>
+
+        </section>
+
+        
     </main>
+    <br>
     <!--pie de pagina-->
     <footer>
-        <p>COPYRIGHT ©2025,hotel bahia</p>
+        <div class="footer-logo">
+            <img src="../fotos/logohotel.png" alt="Hotel Bahía">
+        </div>
+        <p>&copy; 2025 Hotel Bahía. Todos los derechos reservados.</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../fotos/logoinstagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../fotos/facebooklogo.png" alt="Facebook">
+            </a>
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

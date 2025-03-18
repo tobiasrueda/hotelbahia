@@ -3,39 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css"
+    <title>inicio</title>
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="./style/style.css"
 </head>
 <body>
     <header>
         <!--barra de navegacion-->
-          
-        <nav>
-            <img class="imglogo"  src="./fotos/logohotel.png" alt="LOGO">
-            <ul class="ul">
-                <li>
-                    <a class="inicio"  href="index.html">Inicio</a>
-
-                </li>
-                
-                <li>
-                    <a href="./paginas/habitaciones.html">Habitaciones</a>
-
-                </li>
-                <li>
-                    <a href="./paginas/servicios.html">Servicios</a>
-
-                </li>
-                <li>
-                    <a href="./paginas/reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="./paginas/contacto.html">Contacto</a>
-                </li>
-    
-            </ul>
-            
+        <nav class="navbar navbar-light bg-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="/fotos/logohotel.png" alt="Logo del hotel" width="100">
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/habitaciones.html">Habitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/reseña.html">Reseña</a></li>
+                </ul>
+            </div>
         </nav>
+        
     </header>
     <!--contenido principal-->
 
@@ -43,19 +36,51 @@
         <h1>Bienvenidos Al Hotel Bahia</h1>
         <br>
        <div class="divinicio">
-         <img class="imginicio"  src="./fotos/hotelfoto.png" alt="FOTO DEL HOTEL">
+         <img class="imginicio"  src="./fotos/hotelfoto.jpg" alt="FOTO DEL HOTEL">
         
-            <p>Nos encontramos ubicados en    AV.SANMARTIN 203,
-                ofrecemos un Servicio de Hospedaje Vista al mar, cerca de la zona Turistica De Mar Del Plata. Que estas esperando para ser Nuestro Huesped!
+            <p>Nos encontramos ubicados en Av. San Martín 203.
+                Ofrecemos un servicio de hospedaje con vista al mar, cerca de la zona turística de Mar del Plata.
+                ¡¿Qué estás esperando para ser nuestro huésped?!
             </p>
         </div>
+
+        <video data-aos="fade-right" class="video-hotel" autoplay loop muted playsinline>
+            <source src="videos/video-inicio.mp4" type="video/mp4">
+        </video>
+        
+        <h2 class="h2-inicio">Galeria</h2>
+        <section class="section-inicio">
+        <img src="https://www.gestiopolis.com/wp-content/uploads/2014/10/6921058858_2bf0555ba1_b1.jpg" alt="">
+        <img src="https://webbox.imgix.net/images/fkasnjcmlhnbwpkv/ac1975e4-f8ee-4b5c-b76d-321325562de3.jpg?auto=format,compress&fit=crop&crop=entropy" alt="">
+        <img src="https://pbs.twimg.com/media/EvWaWZEXYAEW473.jpg" alt="">
+        <img src="https://www.palladiohotelbuenosaires.com/wp-content/uploads/sites/7/2022/03/palladio_hotel_mgallery_slide_05-2200x1200.jpg" alt="">
+        <img src="https://www.palladiohotelbuenosaires.com/wp-content/uploads/sites/7/2021/11/palladio_hotel_mgallery_restaurant_negresco_bar_slide_01-2200x1200.jpg" alt="">
+       </section>
 
     </main>
     <br>
     <!--pie de pagina-->
     <footer>
-        <p>COPYRIGHT ©2025,hotel bahia</p>       
-    </footer>
+            <div class="footer-logo">
+                <img src="/fotos/logohotel.png" alt="Hotel Bahía">
+            </div>
+            <p>&copy; 2025 Hotel Bahía. Todos los derechos reservados.</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/fotos/logoinstagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/fotos/facebooklogo.png" alt="Facebook">
+                </a>
+            </div>
+    </footer> 
 
+    <!--script aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--script boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

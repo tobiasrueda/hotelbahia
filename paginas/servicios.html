@@ -3,37 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>servicios</title>
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
-        <!--barra de navegacion-->
-            
-        <nav>  
-            <img class="imglogo"  src="../fotos/logohotel.png" alt="LOGO">
-            <ul class="ul">
-                <li>
-                    <a  href="../index.html">Inicio</a>
-
-                </li>
-                
-                <li>
-                    <a href="./habitaciones.html">Habitaciones</a>
-
-                </li>
-                <li>
-                    <a class="servicios" href="./servicios.html">Servicios</a>
-
-                </li>
-                <li>
-                    <a href="./reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-            
+        <!--barra de navegacion-->  
+        <nav class="navbar navbar-light bg-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="/fotos/logohotel.png" alt="Logo del hotel" width="100">
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/habitaciones.html">Habitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/reseña.html">Reseña</a></li>
+                </ul>
+            </div>
         </nav>
         
     </header>
@@ -42,9 +33,9 @@
         <h1>Nuestros Servicios</h1>
         <br>
         
-           <div class="divservicios">
-            <img src="../fotos/gimnasioicono.png" alt="gimnasio">
-            <p>Gimnasio y Recreacion</p>
+           <div class="divservicios" id="Actividades">
+            <img src="../fotos/gimnasioicono.png" alt="gimnasio" >
+            <p>Actividades</p>
             <ul>
             <li>Piscina al aire libre</li>
             <li>Gimnasio</li>
@@ -53,7 +44,7 @@
 
             <div class="divservicios" id="tenedor">   
             <img src="../fotos/tenedoricono.png" alt="tenedor">
-            <p>Restaurante</p>
+            <p>Desayuno</p>
             <ul>
             <li>Restaurante en el hotel</li>
             <li>Servicio a la habitación</li>
@@ -62,7 +53,7 @@
 
             <div class="divservicios">
             <img src="../fotos/trabajoicono.png" alt="trabajo">
-            <p>Negocios y Trabajo</p>
+            <p>Espacio laboral</p>
             <ul>
             <li>Sala de reuniones y Trabajo</li>
             </ul>
@@ -79,22 +70,33 @@
 
             <div class="imgvarias-container">
             <div class="imgvarias-box1">
-                <img src="../fotos/gimnasio.png">
-                <img src="../fotos/piscina.png">
-                <img src="../fotos/sala.png">
+                <img src="../fotos/gimnasio.jpg">
+                <img src="../fotos/piscina.jpg">
+                <img src="../fotos/sala.jpg">
             </div>
             <div class="imgvarias-box2">
-                <img src="../fotos/restaurante.png">
-                <img src="../fotos/serviciohabitacion.png">
-                <img src="../fotos/limpieza.png">
+                <img src="../fotos/restaurante.jpg">
+                <img src="../fotos/serviciohabitacion.jpg">
+                <img src="../fotos/limpieza.jpg">
             </div>
             </div>
         
         </main>
         <!--pie de pagina-->
     <footer>
-        <p>COPYRIGHT ©2025,hotel bahia</p>
+        <div class="footer-logo">
+            <img src="../fotos/logohotel.png" alt="Hotel Bahía">
+        </div>
+        <p>&copy; 2025 Hotel Bahía. Todos los derechos reservados.</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../fotos/logoinstagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../fotos/facebooklogo.png" alt="Facebook">
+            </a>
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

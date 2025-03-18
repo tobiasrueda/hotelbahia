@@ -3,75 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>habitaciones</title>
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
         <!--barra de navegacion-->
-            
-        <nav>  
-            <img class="imglogo"  src="../fotos/logohotel.png" alt="LOGO">
-            <ul class="ul" >
-                
-                <li>
-                    <a  href="../index.html">Inicio</a>
-
-                </li>
-                
-                <li>
-                    <a class="habitaciones" href="./habitaciones.html">Habitaciones</a>
-
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-
-                </li>
-                <li>
-                    <a href="./reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-    
-            </ul>
-            
+        <nav class="navbar navbar-light bg-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="/fotos/logohotel.png" alt="Logo del hotel" width="100">
+                </a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/habitaciones.html">Habitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/reserva.html">Reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/reseña.html">Reseña</a></li>
+                </ul>
+            </div>
         </nav>
         
     </header>
     <!--contenido principal-->
     <main>
-        <h1>Nuestras Habitaciones</h1>
-        <br>
-        <div class="divhabitaciones">
-         <div>
-         <img class="imghabitaciones" src="../fotos/fotohabitacion1.png" alt="Foto de la habitacion">
-         <p class="phabitaciones">Contamos con habitaciones de 2 a 7 personas, Algunas cuentan con balcon Vista hacia al mar, y otras a la avenida</p>
-         </div>
-         <br>
-         <div>
-         <img class="imghabitaciones" src="../fotos/fotohabitacion2.png" alt="Foto de la habitacion">
-         <p class="phabitaciones">las mejores comodidades  y servicio a la habitación </p>
-         </div>
-         <br>
-         <div>
-         <img class="imghabitaciones" src="../fotos/fotohabitacion3.png" alt="Foto de la habitacion">
-         <p class="phabitaciones">Habitaciones con Dormitorios compartidos </p>
-         </div> 
-         <br>
-         <div>
-         <img class="imghabitaciones" src="../fotos/balcon.png" alt="Foto del Balcon">
-         <p class="phabitaciones">Las Mejores vistas a La Playa</p>
-         </div>
-        </div>
-
+        <h1>Habitaciones</h1>
+        <section class="section-habitaciones">
+            <div class="div-habitaciones">
+                <h2 class="titulo-habitaciones">Individual</h2>
+                <div class="imagenes-habitaciones">
+                    <img src="https://www.hotel-tigra.at/files-sbbasic/ba_dastigra_at/_t4a9394.jpg?w=720&h=720" alt="Habitación Individual">
+                    <img src="https://i.pinimg.com/736x/d2/54/83/d2548388a4f6108c340a250c2fe26704.jpg" alt="Habitación Individual">
+                    <img src="https://begoodhs.com/wp-content/uploads/2023/07/mini-bar-hotel.jpg" alt="Habitación Individual">
+                </div>
+                <p>Una habitación cómoda para una persona y tambien para dos, con todas las comodidades necesarias.</p>
+            </div>
+        
+            <div class="div-habitaciones">
+                <h2 class="titulo-habitaciones">Doble</h2>
+                <div class="imagenes-habitaciones">
+                    <img src="https://duchaya.com/wp-content/uploads/2023/01/reforma-de-bano-duchaya-hotel-palacio-de-aiete.png" alt="Habitación Doble">
+                    <img src="https://isabelhotelunico.com/images/d-11.jpg" alt="Habitación Doble">
+                    <img src="https://isabelhotelunico.com/images/d-08.jpg" alt="Habitación Doble">
+                </div>
+                <p>Perfecta para dos personas, con amplio espacio y confort.</p>
+            </div>
+        
+            <div class="div-habitaciones">
+                <h2 class="titulo-habitaciones">Suite</h2>
+                <div class="imagenes-habitaciones">
+                    <img src="https://www.hoteldonpancho.es/wp-content/uploads/2018/11/atico-suite-1024x640.jpg" alt="Suite">
+                    <img src="../fotos/balcon.jpg" alt="Suite">
+                    <img src="https://www.revista80dias.es/images/2014/12/roca-nivaria-bano-suite.jpg" alt="Suite">
+                </div>
+                <p >Un lujo de habitación con todas las comodidades y diseño elegante.</p>
+            </div>
+        
+            <div class="div-habitaciones">
+                <h2 class="titulo-habitaciones">Familiar</h2>
+                <div class="imagenes-habitaciones">
+                    <img src="../fotos/fotohabitacion3.jpg" alt="Habitación Familiar">
+                    <img src="https://www.hola.com/horizon/landscape/5910880b379a-pedralbes-house-057.jpg">
+                    <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/11/24142640/PARA-TI-DECO-VIVIANA-MELAMED-DECORADORA-20171124-MESA-LIVING-AG-20171124.jpg" alt="Habitación Familiar">
+                </div>
+                <p >Espacio ideal para familias, con varias camas y ambiente acogedor.</p>
+            </div>
+        </section>
+        
     </main>
     <br>
     <!--pie de pagina-->
     <footer>
-        <p>COPYRIGHT ©2025,hotel bahia</p>
-
+        <div class="footer-logo">
+            <img src="../fotos/logohotel.png" alt="Hotel Bahía">
+        </div>
+        <p>&copy; 2025 Hotel Bahía. Todos los derechos reservados.</p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../fotos/logoinstagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../fotos/facebooklogo.png" alt="Facebook">
+            </a>
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
