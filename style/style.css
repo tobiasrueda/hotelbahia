@@ -1,8 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
-  margin: 0%;
+  margin: 0;
+  padding: 0;
 }
 
+/* Tipografia */
 /*para computadoras*/
 @media (min-width: 1024px) {
   body {
@@ -28,18 +31,18 @@
   }
   /*main*/
   h1 {
-    color: black;
     font-size: 50px;
-    margin: 1%;
-    text-align: center;
     box-shadow: 10px 10px 40px 3px black;
+    text-align: center;
+    margin: 1%;
+    color: black;
   }
   /*inicio*/
   .divinicio p {
     color: white;
-    font-family: "Times New Roman", Times, serif;
     font-size: 50px;
     text-align: center;
+    font-family: "roboto";
   }
   .imginicio {
     width: 550px;

@@ -1,0 +1,33 @@
+//mixin
+@mixin h2-inicio($size){
+    color: black;
+    font-size: $size;
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline solid black 3px;
+}
+@mixin h1($size){
+    font-size: $size;
+    box-shadow: 10px 10px 40px 3px black;
+    text-align: center;
+    margin: 1%;
+    color: black;
+
+
+}
+@mixin nav{
+    background:linear-gradient($color-principal, $color-secundario);
+    border: 2px solid $color-secundario;
+}
+@mixin header {
+    position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+@mixin section-habitaciones($gap, $padding) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap;
+    padding: $padding;
+  }
