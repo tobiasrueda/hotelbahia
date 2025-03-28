@@ -161,8 +161,7 @@
        grid-template-columns: repeat(3,1fr);
        grid-template-rows: 300px 300px;
        grid-template-areas: "box1 box1 box1" "box2 box2 box2";
-       padding-left: 10%;
-       margin:30px ;
+       place-items: center;
    }
    .imgvarias-box1{
        grid-area: box1;
@@ -178,11 +177,9 @@
    
    /*reserva*/
    .reserva-form {
-       max-width: 500px;
-       margin: auto;
+       max-width: 100%;
        padding: 20px;
-       background: #f8f8f8;
-       border-radius: 10px;
+       background: linear-gradient(white,gray,);
        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    }
    
